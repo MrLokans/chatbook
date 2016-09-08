@@ -1,0 +1,37 @@
+@main-background-gray: #f1f1f1;
+@dialog-gray: #FDFDFD;
+@dialog-border-gray: #AFAFAF;
+
+@message-width: 550px;
+
+body {
+    background-color: @main-background-gray;
+}
+
+#dialog-wrapper {
+    background-color: @dialog-gray;
+    height: 600px;
+    border: 1px solid @dialog-border-gray;
+}
+
+.message {
+    margin-top: 6px;
+    padding: 5px 5px;
+    border: 1px solid @dialog-border-gray;
+    border-radius: 3px; 
+    max-width: @message-width;
+}
+
+.message__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message__header_author, .message__header_date {
+    // display: inline-block;
+}
+
+.message__header_date {
+    // position: relative;
+    // right: -5px;
+}
